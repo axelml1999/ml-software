@@ -1,0 +1,58 @@
+@import "../../scss/main.scss";
+
+.footer {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--primary-color);
+
+  &__container {
+    padding: 1em;
+    margin-top: 4em;
+    border: 2px solid var(--primary-color);
+  }
+
+  &__item {
+    padding-top: 2em;
+  }
+
+  &__logo {
+    width: 70%;
+
+    @include mq(xl) {
+      width: 60%;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: var(--primary-color);
+    font-size: 20px;
+  }
+
+  &__span {
+    font-size: 20px;
+    display: block;
+    padding-top: 1em;
+  }
+
+  &__item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__image {
+    width: 70%;
+
+    @include mq(xl) {
+      width: 40%;
+    }
+  }
+
+  &__grid {
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

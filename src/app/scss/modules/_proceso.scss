@@ -1,0 +1,90 @@
+.proceso {
+
+    margin-top: 6em;
+    margin-bottom: 6em;
+
+    &__card {
+        background-color: var(--primary-color);
+        margin: 5%;
+        padding: 1em;
+        color: var(--white-color);
+        border-radius: 1.5em;
+
+        @include mq(xl) {
+            padding: 1.5em;
+        }
+    }
+
+    &__title {
+        color: var(--secondary-color);
+        text-align: center;
+        padding-bottom: 1em;
+        @include mq(m) {
+            font-size: 30px;
+            }
+
+
+        @include mq(xl) {
+            font-size: 30px;
+        } 
+    }
+    
+    &__information {
+        display: flex;
+    }
+
+    &__icon {
+        width: 20%;
+
+        @include mq(m) {
+            width: 12%;
+        }
+
+        @include mq(xl) {
+            width: 10%;
+        }
+    }
+
+    &__cardtitle {
+        font-size: 19px;
+        font-family: var(--bold-font);
+        padding-left: 1em;
+        padding-top: .5em;
+
+        @include mq(m) {
+            font-size: 12px;
+        }
+
+        @include mq(xl) {
+            font-size: 19px;
+        }
+    }
+
+    &__description {
+        text-align: left;
+        font-size: 12px;
+        padding-top: .8em;
+
+        @include mq(m) {
+            font-size: 10px;
+        }
+
+        @include mq(xl) {
+            font-size: 15px;
+        }
+    }
+
+    &__grid {
+        @include mq(m) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+
+        @include mq(xl) {
+            padding-right: 7em;
+            padding-left: 7em;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+<section class="heroslide">
+    <swiper [slidesPerView]="1" [spaceBetween]="10" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
+        [navigation]="true" [pagination]="{ clickable: true }">
+        <ng-template swiperSlide>
+            <div class="heroslide__item">
+                <img class="heroslide__imgslide" src="/assets/images/Inicio.png" alt="Inicio">
+                <div class="heroslide__content hvr-pulse">
+                    <h1 class="heroslide__title-blue">Tu lo piensas, nosotros lo programamos</h1>
+                    <div class="heroslide__icon-container">
+                        <img class="heroslide__icon" src="/assets/images/icon-soft.png" alt="Software-Icon">
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="heroslide__item">
+                <img class="heroslide__imgslide" src="/assets/images/Web.png" alt="Web">
+                <div class="heroslide__content hvr-pulse">
+                    <h1 class="heroslide__title-white">Desarrollo Web</h1>
+                    <div class="heroslide__icon-container">
+                        <img class="heroslide__icon" src="/assets/images/web-icon.png" alt="Web-Icon">
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="heroslide__item">
+                <img class="heroslide__imgslide" src="/assets/images/Movil.png" alt="Movil">
+                <div class="heroslide__content hvr-pulse">
+                    <h1 class="heroslide__title-blue">Desarrollo Movil</h1>
+                    <div class="heroslide__icon-container">
+                        <img class="heroslide__icon" src="/assets/images/movil-icon.png" alt="Movil-Icon">
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="heroslide__item">
+                <img class="heroslide__imgslide" src="/assets/images/Escritorio.png" alt="Escritorio">
+                <div class="heroslide__content hvr-pulse">
+                    <h1 class="heroslide__title-white">Aplicaciones de Escritorio</h1>
+                    <div class="heroslide__icon-container">
+                        <img class="heroslide__icon" src="/assets/images/escritorio-icon.png" alt="App-Icon">
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="heroslide__item">
+                <img class="heroslide__imgslide" src="/assets/images/Marketing.png" alt="Marketing">
+                <div class="heroslide__content hvr-pulse">
+                    <h1 class="heroslide__title-blue">Marketing Digital</h1>
+                    <div class="heroslide__icon-container">
+                        <img class="heroslide__icon" src="/assets/images/marketing-icon.png" alt="Marketing-Icon">
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</section>
+<section class="elegirnos">
+    <div class="elegirnos__container">
+        <h1 class="elegirnos__title hvr-pulse" data-aos="fade-up">¿Por qué elegirnos?</h1>
+        <div class="elegirnos__grid">
+            <div class="elegirnos__card hvr-float-shadow" data-aos="flip-left">
+                <div class="elegirnos__content"><span class="elegirnos__titlecontent">Compromiso</span>
+                    <p class="elegirnos__text">Desarrollamos software de calidad para el crecimiento de tu negocio.
+                    </p><img class="elegirnos__icon" src="/assets/images/support.png" alt="Compromiso">
+                </div>
+            </div>
+            <div class="elegirnos__card hvr-float-shadow" data-aos="flip-left">
+                <div class="elegirnos__content"><span class="elegirnos__titlecontent">Seguridad</span>
+                    <p class="elegirnos__text">Protección de datos e información del cliente en todo momento.</p>
+                    <img class="elegirnos__icon" src="/assets/images/proteger.png" alt="Seguridad">
+                </div>
+            </div>
+            <div class="elegirnos__card hvr-float-shadow" data-aos="flip-left">
+                <div class="elegirnos__content"><span class="elegirnos__titlecontent">Personal Capacitado</span>
+                    <p class="elegirnos__text">Colaboradores capacitados para brindar un servicio de alta calidad.
+                    </p><img class="elegirnos__icon" src="/assets/images/empresario.png" alt="Personal Capacitado">
+                </div>
+            </div>
+            <div class="elegirnos__card hvr-float-shadow" data-aos="flip-left">
+                <div class="elegirnos__content"><span class="elegirnos__titlecontent">Accesibilidad</span>
+                    <p class="elegirnos__text">Nos adaptamos a tu presupuesto.</p><img class="elegirnos__icon"
+                        src="/assets/images/hand.png" alt="Accesibilidad">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="banner">
+    <div class="banner__container">
+        <div class="banner__img"><img class="banner__image" src="/assets/images/banner.png" alt="Banner img">
+            <div class="banner__item">
+                <div class="banner__content" data-aos="fade-up">
+                    <h1 class="banner__title hvr-pulse">¡Software a la medida!</h1>
+                    <p class="banner__descripcion">En MLSoftware estamos comprometidos con la innovación.
+                        Desarrollamos software diseñado exclusivamente para su empresa.</p><img class="banner__icon"
+                        src="/assets/images/software.png" alt="Icon Banner">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="proceso">
+    <div class="proceso__container">
+        <h1 class="hvr-pulse proceso__title" data-aos="fade-up">Nuestros procesos</h1>
+        <div class="proceso__grid">
+            <div class="proceso__card hvr-float-shadow" data-aos="zoom-in">
+                <div class="proceso__information"><img class="proceso__icon" src="/assets/images/numero1.png"
+                        alt="Numero 1"><span class="proceso__cardtitle">Entrevista preliminar</span></div>
+                <p class="proceso__description">Se realiza una reunión amistosa con el cliente para poder hacer la
+                    toma de requerimientos, al mismo tiempo estos mismos serán analizados y se definirán los
+                    objetivos para el desarrollo del proyecto.</p>
+            </div>
+            <div class="proceso__card hvr-float-shadow" data-aos="zoom-in">
+                <div class="proceso__information"><img class="proceso__icon" src="/assets/images/numero2.png"
+                        alt="Numero 2"><span class="proceso__cardtitle">Diseño</span></div>
+                <p class="proceso__description">Se crean mockups(prototipos visuales) y se le presentan al cliente
+                    para su aprobación, correcciones o dudas que se tengan.</p>
+            </div>
+            <div class="proceso__card hvr-float-shadow" data-aos="zoom-in">
+                <div class="proceso__information"><img class="proceso__icon" src="/assets/images/numero3.png"
+                        alt="Numero 3"><span class="proceso__cardtitle">Desarrollo</span></div>
+                <p class="proceso__description">En esta parte se le da vida a las ideas plasmadas en un inicio, se
+                    codifican los módulos y se realizan pruebas de testeo para después integrar estos mismos.</p>
+            </div>
+            <div class="proceso__card hvr-float-shadow" data-aos="zoom-in">
+                <div class="proceso__information"><img class="proceso__icon" src="/assets/images/numero4.png"
+                        alt="Numero 4"><span class="proceso__cardtitle">Entrega</span></div>
+                <p class="proceso__description">Aprobación completa del cliente, ajuste de últimos detalles y
+                    entrega del proyecto en su totalidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service">
+    <div class="service__container">
+        <h1 class="service__title hvr-pulse" data-aos="fade-up">Nuestros servicios</h1>
+        <div class="service__grid">
+            <div class="service__card hvr-float-shadow" data-aos="flip-right"><span
+                    class="service__cardtitle">Desarrollo web</span>
+                <p class="service__description">Somos profesionales en el desarrollo y diseño web. Desarrollamos
+                    proyectos para hacer crecer a tus empresa empleando las mejores estrategias de posicionamiento
+                    en internet.</p><img class="service__image" src="/assets/images/navegador.png"
+                    alt="Navegador Image">
+            </div>
+            <div class="service__card hvr-float-shadow" data-aos="flip-right"><span
+                    class="service__cardtitle">Desarrollo movil</span>
+                <p class="service__description">Desarrollamos aplicaciones para Android e IOS con la finalidad de
+                    posicionar a tu empresa en el mercado y expandir la presencia de la misma.</p><img
+                    class="service__image" src="/assets/images/phone.png" alt="Phone Image">
+            </div>
+            <div class="service__card hvr-float-shadow" data-aos="flip-right"><span class="service__cardtitle">Sistemas
+                    a la
+                    medida</span>
+                <p class="service__description">Desarrollamos sistemas que se ajustan detalladamente a los procesos
+                    de tu empresa. Sistemas web, de escritorio y móviles son algunas de nuestras soluciones en las
+                    que puedes tomar un mejor control de tu empresa.</p><img class="service__image"
+                    src="/assets/images/programacion.png" alt="Programador Image">
+            </div>
+            <div class="service__card hvr-float-shadow" data-aos="flip-right"><span class="service__cardtitle">Marketing
+                    digital</span>
+                <p class="service__description">Colaboramos con una agencia de marketing enfocada en la evolución
+                    digital, si necesitas hacer crecer tu empresa en esta nueva era tecnológica ellos son los
+                    indicados, además de que al armar tu paquete con nosotros se te hace un pequeño descuento.</p>
+                <img class="service__image" src="/assets/images/Nativa.png" alt="Nativa Logo">
+            </div>
+        </div>
+    </div>
+</section>

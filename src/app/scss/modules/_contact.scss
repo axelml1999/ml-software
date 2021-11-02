@@ -1,0 +1,54 @@
+.contact {
+  $color: rgba(73, 137, 203, 0.9);
+  background: linear-gradient(rgba($color, 0.5), rgba($color, 0.9)),
+    url("/assets/images/computer.jpg") center / cover;
+  position: relative;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__container {
+    margin-top: 5em;
+  }
+
+  &__title {
+    color: var(--white-color);
+    padding-top: 1.5em;
+    font-size: 1.4em;
+  }
+
+  &__input {
+    padding-left: 1em;
+    margin-top: 1em;
+    height: 3em;
+    width: 60%;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    outline: none;
+    color: var(--text-color-white);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  ::placeholder {
+    color: var(--white-color);
+  }
+
+  &__button {
+    margin-top: 2em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+  }
+}

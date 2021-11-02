@@ -1,0 +1,32 @@
+/* ********** Custom Properties ********** */
+:root {
+  --regular-font: "Montserrat Regular";
+  --black-font: "Montserrat Black";
+  --bold-font: "Montserrat Bold";
+  --light-font: "Montserrat Light";
+  --medium-font: "Montserrat Medium";
+  --font-size: 16px;
+  --line-height: 1.6;
+
+  --primary-color: #4989cb;
+  --secondary-color: #36699e;
+  --black-color: #000;
+  --white-color: #fff;
+
+  --text-black: var(--black-color);
+  --text-white: var(--white-color);
+
+  --z-index-down: 25;
+  --z-index-middle: 50;
+  --z-index-up: 75;
+  --z-index-above: 100;
+}
+
+/* ********** Breakpoints ********** */
+$breakpoints: (
+  xs: 30em,
+  /* 480 / 16  */ s: 37.5em,
+  /* 600 / 16  */ m: 45em,
+  /* 720 / 16 */ l: 64em,
+  /* 1024 / 16 */ xl: 75em /* 1200/ 16 */,
+);

@@ -1,0 +1,21 @@
+/* ********** Menu Component ********** */
+.header {
+    background-color: var(--white-color);
+    color: var(--text-color-black);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-up);
+    border-color: var(--primary-color);
+  
+    // header__container
+    &__container {
+      width: 90%;
+      height: 80px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      @include mq(m) { width: 100%; }
+    }
+  }

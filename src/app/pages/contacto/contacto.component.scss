@@ -1,0 +1,225 @@
+@import "../../scss/main.scss";
+/* ********** Somos Component ********** */
+.hero-contacto {
+  $color: rgba(73, 137, 203, 0.8);
+  background: linear-gradient(rgba($color, 0.6), rgba($color, 0.6)),
+    url("/assets/images/contacto-image.png") no-repeat fixed;
+  position: relative;
+  min-height: 400px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include mq(xl) {
+    min-height: 600px;
+  }
+
+  &__content {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 30%;
+
+    @include mq(m) {
+      width: 20%;
+    }
+
+    @include mq(xl) {
+      width: 15%;
+    }
+  }
+
+  &__title {
+    color: var(--white-color);
+    font-size: 3em;
+
+    @include mq(xl) {
+      font-size: 7em;
+    }
+  }
+
+  &__container {
+    padding-top: 5em;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    @include mq(m) {
+      padding-top: 3em;
+    }
+
+    @include mq(xl) {
+      padding-top: 4em;
+    }
+  }
+}
+
+.contacto {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__card {
+    border: 3px solid var(--primary-color);
+    margin: 2em auto;
+    border-radius: 2em;
+    width: 75%;
+  }
+
+  &__content {
+    margin: 1em;
+    color: var(--secondary-color);
+  }
+
+  &__icon {
+    width: 30%;
+
+    @include mq(xl) {
+      width: 25%;
+    }
+  }
+
+  &__info {
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color: var(--secondary-color);
+  }
+
+  &__grid {
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-top: 2em;
+    }
+
+    @include mq(xl) {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+
+  &__container {
+    margin-top: 4em;
+  }
+}
+
+.contact {
+  $color: rgba(73, 137, 203, 0.9);
+  background: linear-gradient(rgba($color, 0.5), rgba($color, 0.9)),
+    url("/assets/images/computer.jpg") center / cover;
+  position: relative;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__container {
+    margin-top: 5em;
+  }
+
+  &__title {
+    color: var(--white-color);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 25px;
+  }
+
+  &__input {
+    padding-left: 1em;
+    margin-top: 1em;
+    height: 3em;
+    width: 60%;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    outline: none;
+    color: var(--text-color-white);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  ::placeholder {
+    color: var(--white-color);
+  }
+
+  &__button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+  }
+
+  &__form {
+    @include mq(xl) {
+      padding-right: 10em;
+      padding-left: 10em;
+    }
+  }
+
+  &__label {
+    display: block;
+    color: var(--white-color);
+    font-size: 20px;
+    @include mq(m) {
+      padding-right: 0.5em;
+    }
+  }
+
+  #contactName {
+    color: var(--secondary-color);
+  }
+  #contactEmail {
+    color: var(--secondary-color);
+  }
+  #contactPhone {
+    color: var(--secondary-color);
+  }
+  #contactService {
+    color: var(--secondary-color);
+  }
+
+  &__formulario {
+    @include mq(m) {
+      .contact__item:nth-last-child(3) {
+        .contact__label {
+          margin-left: 6.5em;
+        }
+      }
+
+      .contact__item:nth-last-child(2) {
+        .contact__label {
+          margin-left: 5em;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding-bottom: 2em;
+    @include mq(m) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+    }
+  }
+}

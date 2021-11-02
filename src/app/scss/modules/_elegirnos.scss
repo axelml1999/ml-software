@@ -1,0 +1,92 @@
+.elegirnos {
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+
+    &__title {
+        text-align: center;
+        color: var(--secondary-color);
+        padding-top: 1em;
+        font-size: 25px;
+
+        @include mq(m) { padding-top: 2em; font-size: 30px; }
+        
+    }
+
+    &__card {
+        border: 3px solid var(--primary-color);
+        margin: 2em auto;
+        border-radius: 2em;
+        width: 75%;
+
+    }
+
+    &__content {
+        margin: 1em;
+    }
+
+    &__titlecontent {
+        font-family: var(--bold-font);
+        font-size: 20px;
+        color: var(--primary-color);
+        @include  mq(m) {
+            font-size: 15px;
+        }
+
+        @include  mq(xl) {
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        color: var(--secondary-color);
+        padding-top: 1em;
+        @include  mq(m) {
+            padding-top: 2em;
+        }
+    }
+
+    &__icon {
+        width: 50%;
+        height: auto;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        object-fit: cover;
+        padding-top: 2em;
+
+        @include mq(m) {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 1em;
+            width: 25%;
+            padding-top: 5em;
+        }
+
+
+
+    }
+
+    &__grid {
+        @include mq(m) {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding-top: 2em;
+        }
+
+        @include mq(xl) {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding-top: 2em;
+
+            .elegirnos__card:last-child{
+                .elegirnos__content {
+                    .elegirnos__icon {
+                        padding-top: 6.5em;
+                    }
+                }
+            }
+        }
+    }
+}

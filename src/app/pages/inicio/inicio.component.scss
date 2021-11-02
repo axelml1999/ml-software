@@ -1,0 +1,511 @@
+@import "../../scss/main.scss";
+/* ********** HeroSlide Component ********** */
+.heroslide {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  &__content {
+    width: 100%;
+    list-style: none;
+    display: block;
+  }
+
+  &__imgslide {
+    min-height: 400px;
+    object-fit: cover;
+    @include mq(xl) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__icon-container {
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+
+    @include mq(m) {
+      width: 30%;
+    }
+
+    @include mq(xl) {
+      width: 25%;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 10%;
+  }
+
+  &__button {
+    margin-right: 10.1em;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 30px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+  }
+
+  &__button2 {
+    padding: 5px;
+    font-weight: 700;
+    font-size: 30px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+  }
+
+  &__grid {
+    position: absolute;
+    z-index: 1;
+    top: 38%;
+  }
+
+  &__title-blue {
+    color: var(--primary-color);
+    font-size: 35px;
+    font-family: var(--bold-font);
+
+    @include mq(m) {
+      font-size: 40px;
+    }
+
+    @include mq(xl) {
+      font-size: 90px;
+    }
+  }
+
+  &__title-white {
+    color: var(--white-color);
+    font-size: 35px;
+    font-family: var(--bold-font);
+
+    @include mq(m) {
+      font-size: 40px;
+    }
+
+    @include mq(xl) {
+      font-size: 90px;
+    }
+  }
+}
+/* ********** Elegirnos Component ********** */
+.elegirnos {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__title {
+    text-align: center;
+    color: var(--secondary-color);
+    padding-top: 1em;
+    font-size: 25px;
+
+    @include mq(m) {
+      padding-top: 2em;
+      font-size: 30px;
+    }
+  }
+
+  &__card {
+    border: 3px solid var(--primary-color);
+    margin: 2em auto;
+    border-radius: 2em;
+    width: 75%;
+  }
+
+  &__content {
+    margin: 1em;
+  }
+
+  &__titlecontent {
+    font-family: var(--bold-font);
+    font-size: 20px;
+    color: var(--primary-color);
+    @include mq(m) {
+      font-size: 15px;
+    }
+
+    @include mq(xl) {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    color: var(--secondary-color);
+    padding-top: 1em;
+    @include mq(m) {
+      padding-top: 2em;
+    }
+  }
+
+  &__icon {
+    width: 50%;
+    height: auto;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    object-fit: cover;
+    padding-top: 2em;
+
+    @include mq(m) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 1em;
+      width: 25%;
+      padding-top: 5em;
+    }
+  }
+
+  &__grid {
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding-top: 2em;
+    }
+
+    @include mq(xl) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding-top: 2em;
+
+      .elegirnos__card:last-child {
+        .elegirnos__content {
+          .elegirnos__icon {
+            padding-top: 6.5em;
+          }
+        }
+      }
+    }
+  }
+}
+/* ********** Banner Component ********** */
+.banner {
+  color: var(--white-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // Offer Image
+  &__image {
+    height: calc(100vh - 60px);
+    width: 100vw;
+    object-fit: cover;
+    @include mq(m) {
+      height: 100%;
+    }
+  }
+
+  &__title {
+    @include mq(m) {
+      font-size: 18px;
+    }
+
+    @include mq(xl) {
+      font-size: 30px;
+    }
+  }
+
+  &__descripcion {
+    padding-top: 3em;
+
+    @include mq(m) {
+      padding-top: 1em;
+      font-size: 12px;
+      margin: 0px;
+    }
+
+    @include mq(xl) {
+      font-size: 20px;
+      margin: 1em;
+    }
+  }
+
+  &__img {
+    position: relative;
+    justify-content: center;
+    padding-top: 1em;
+    @include mq(m) {
+      padding-top: 5em;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    top: 20px;
+    height: 80%;
+    @include mq(m) {
+      top: 65px;
+      left: 65%;
+    }
+  }
+
+  &__content {
+    margin: 2em;
+  }
+
+  &__icon {
+    width: 50%;
+    padding-top: 5em;
+
+    @include mq(m) {
+      padding-top: 2em;
+      width: 20%;
+    }
+
+    @include mq(xl) {
+      width: 25%;
+      padding-top: 5em;
+    }
+  }
+}
+/* ********** Proceso Component ********** */
+.proceso {
+  margin-top: 6em;
+  margin-bottom: 6em;
+
+  &__card {
+    background-color: var(--primary-color);
+    margin: 5%;
+    padding: 1em;
+    color: var(--white-color);
+    border-radius: 1.5em;
+
+    @include mq(xl) {
+      padding: 1.5em;
+    }
+  }
+
+  &__title {
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 1em;
+    @include mq(m) {
+      font-size: 30px;
+    }
+
+    @include mq(xl) {
+      font-size: 30px;
+    }
+  }
+
+  &__information {
+    display: flex;
+  }
+
+  &__icon {
+    width: 20%;
+
+    @include mq(m) {
+      width: 12%;
+    }
+
+    @include mq(xl) {
+      width: 10%;
+    }
+  }
+
+  &__cardtitle {
+    font-size: 19px;
+    font-family: var(--bold-font);
+    padding-left: 1em;
+    padding-top: 0.5em;
+
+    @include mq(m) {
+      font-size: 12px;
+    }
+
+    @include mq(xl) {
+      font-size: 19px;
+    }
+  }
+
+  &__description {
+    text-align: left;
+    font-size: 12px;
+    padding-top: 0.8em;
+
+    @include mq(m) {
+      font-size: 10px;
+    }
+
+    @include mq(xl) {
+      font-size: 15px;
+    }
+  }
+
+  &__grid {
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-right: 1em;
+      padding-left: 1em;
+    }
+
+    @include mq(xl) {
+      padding-right: 7em;
+      padding-left: 7em;
+    }
+  }
+}
+/* ********** Service Component ********** */
+.service {
+  background-color: var(--primary-color);
+  margin-top: 4em;
+
+  &__title {
+    color: var(--white-color);
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: block;
+    @include mq(m) {
+      font-size: 30px;
+    }
+
+    @include mq(xl) {
+      padding-top: 1em;
+      font-size: 30px;
+    }
+  }
+
+  &__card {
+    margin: 3em;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    border: 5px solid var(--secondary-color);
+    border-radius: 2em;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+
+    @include mq(m) {
+      margin: 1em;
+    }
+
+    @include mq(xl) {
+      margin: 2em;
+    }
+  }
+
+  &__cardtitle {
+    font-size: 20px;
+    font-family: var(--bold-font);
+
+    @include mq(xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    padding-top: 1em;
+
+    @include mq(m) {
+      font-size: 10px;
+    }
+
+    @include mq(xl) {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    width: 30%;
+    padding-top: 2em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mq(xl) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .service__card:nth-last-child(2) {
+        .service__image {
+          padding-top: 3.5em;
+        }
+      }
+
+      .service__card:nth-last-child(3) {
+        .service__image {
+          padding-top: 6.8em;
+        }
+      }
+
+      .service__card:nth-last-child(4) {
+        .service__image {
+          padding-top: 3.5em;
+        }
+      }
+    }
+  }
+}
+/* ********** Contact Component ********** */
+.contact {
+  $color: rgba(73, 137, 203, 0.9);
+  background: linear-gradient(rgba($color, 0.5), rgba($color, 0.9)),
+    url("/assets/images/computer.jpg") center / cover;
+  position: relative;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__container {
+    margin-top: 5em;
+  }
+
+  &__title {
+    color: var(--white-color);
+    padding-top: 1.5em;
+    font-size: 1.4em;
+  }
+
+  &__input {
+    padding-left: 1em;
+    margin-top: 1em;
+    height: 3em;
+    width: 60%;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    outline: none;
+    color: var(--text-color-white);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  ::placeholder {
+    color: var(--white-color);
+  }
+
+  &__button {
+    margin-top: 2em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+  }
+}

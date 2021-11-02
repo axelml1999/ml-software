@@ -1,0 +1,112 @@
+@import "../../scss/main.scss";
+.hero-portafolio {
+  $color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(rgba($color, 0.6), rgba($color, 0.6)),
+    url("/assets/images/portafolio-image.jpg") no-repeat fixed;
+  position: relative;
+  min-height: 400px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include mq(xl) {
+    min-height: 600px;
+  }
+
+  &__content {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 30%;
+
+    @include mq(m) {
+      width: 20%;
+    }
+
+    @include mq(xl) {
+      width: 15%;
+    }
+  }
+
+  &__title {
+    color: var(--secondary-color);
+    font-size: 3em;
+
+    @include mq(xl) {
+      font-size: 7em;
+    }
+  }
+
+  &__container {
+    padding-top: 2em;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    @include mq(m) {
+      padding-top: 3em;
+    }
+
+    @include mq(xl) {
+      padding-top: 4em;
+    }
+  }
+}
+
+.portafolio {
+  margin: 2em;
+
+  &__container {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--secondary-color);
+
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-top: 2em;
+    }
+  }
+
+  &__item {
+    padding: 1.5em;
+  }
+
+  &__button {
+    padding: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px transparent var(--secondary-color);
+    border-radius: 2em;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+  }
+
+  &__description {
+    padding-bottom: 1em;
+    padding-top: 1em;
+
+    @include mq(xl) {
+      padding: 4em;
+      padding-bottom: 0.5em;
+      padding-top: 0em;
+    }
+  }
+
+  &__image {
+    @include mq(xl) {
+      width: 80%;
+    }
+  }
+}
