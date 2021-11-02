@@ -1,0 +1,64 @@
+@import "../../scss/main.scss";
+
+.login {
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white-color);
+  margin: 1.5em;
+  margin-top: 7em;
+  border-radius: 1.5em;
+  @include mq(m) {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0em;
+  }
+
+  @include mq(xl) {
+    width: 50%;
+  }
+
+  &__container {
+    padding: 3em;
+  }
+
+  &__span {
+    display: block;
+    padding-top: 1em;
+    font-size: 20px;
+  }
+
+  &__button {
+    margin-top: 2em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+  }
+
+  &__input {
+    padding-left: 1em;
+    height: 2.5em;
+    width: 80%;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    outline: none;
+    color: var(--text-color-white);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__logo {
+    @include mq(m) {
+      width: 50%;
+    }
+  }
+}
