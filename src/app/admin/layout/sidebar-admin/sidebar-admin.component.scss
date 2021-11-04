@@ -1,0 +1,175 @@
+@import "../../../scss/main.scss";
+
+/* ========
+	GLOBAL
+	======== */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #fff;
+  font-family: "Montserrat", serif;
+}
+
+ul,
+a {
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #ccc;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* =================
+    NAVIGATION AREA
+    ================= */
+
+/* TOP BAR */
+
+.top-bar {
+  width: 100%;
+  height: 45px;
+  background: #67f6cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-btn {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+#nav-btn span {
+  width: 100%;
+  height: 4px;
+  background: #333;
+  margin-bottom: 5px;
+  display: block;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+}
+
+#nav-btn span:nth-child(2) {
+  width: 75%;
+}
+
+#nav-btn span:nth-child(3) {
+  width: 50%;
+}
+
+#nav-btn:hover span {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.logo {
+  color: #333;
+  font-weight: 700;
+  padding: 0 0px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+}
+
+.social {
+  margin-right: 15px;
+}
+
+.fab {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #67f6cb;
+  background: #67f6cb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fab:hover {
+  background: #333;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+/* MAIN WRAPPER */
+
+#wrapper {
+  transition: all 0.3s ease;
+}
+
+.aside {
+  transition: all 0.3s ease;
+  padding-left: 5%;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  top: 45px;
+  left: -15%;
+  width: 15%;
+  height: 100vh;
+  background: var(--primary-color);
+  overflow-y: auto;
+  transition: left 0.3s ease;
+}
+
+nav.active {
+  left: 0;
+  transition: left 0.3s ease;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+}
+
+nav ul hr {
+  width: 100%;
+  height: 0.5px;
+  display: block;
+  margin: 0;
+  background-color: darkgray;
+}
+
+ul a:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* =================
+     CONTENTS
+    ================= */
+
+#main-contents {
+  text-align: justify;
+  margin: 3rem 0 0;
+}
+
+#main-contents h1,
+h2,
+h3,
+p {
+  margin: 1.5rem 2rem;
+}

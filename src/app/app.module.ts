@@ -10,11 +10,14 @@ import { IndexComponent } from './index/index.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './layout/main/main.component';
 import { NgxGlideModule } from 'ngx-glide';
-
 import { OwlModule } from 'ngx-owl-carousel';
 import { SwiperModule } from 'swiper/angular';
 import { LoginComponent } from './admin/login/login.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { DashboardComponent } from './admin/pages/dashboard/dashboard.component';
+import { NavbarAdminComponent } from './admin/layout/navbar-admin/navbar-admin.component';
+import { SidebarAdminComponent } from './admin/layout/sidebar-admin/sidebar-admin.component';
+import { PortafolioAdminComponent } from './admin/pages/portafolio-admin/portafolio-admin.component';
+import { ClientesAdminComponent } from './admin/pages/clientes-admin/clientes-admin.component';
 
 
 @NgModule({
@@ -35,7 +38,11 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     IndexComponent,
     MainComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarAdminComponent,
+    SidebarAdminComponent,
+    PortafolioAdminComponent,
+    ClientesAdminComponent
   ],
   providers: [],
   bootstrap: [IndexComponent]

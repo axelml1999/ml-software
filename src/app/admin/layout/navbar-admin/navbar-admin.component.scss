@@ -1,0 +1,191 @@
+@import "../../../scss/main.scss";
+
+.header {
+  background-color: var(--white-color);
+  color: var(--text-color-black);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-up);
+  border-color: var(--primary-color);
+
+  // header__container
+  &__container {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(m) {
+      width: 100%;
+    }
+  }
+}
+
+/* ********** Menu Component ********** */
+
+.logo {
+  display: block;
+  width: 50%;
+  height: auto;
+  padding-top: 0.7em;
+
+  @include mq(m) {
+    width: 25%;
+  }
+
+  @include mq(xl) {
+    width: 30%;
+  }
+}
+
+/* ********** Hamburger Menu ********** */
+.hamburger {
+  position: relative;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  @include mq(m) {
+    display: none;
+  }
+
+  // .hamburger__body
+  &__body {
+    width: 25px;
+    height: 2px;
+    background: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: var(--primary-color);
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      transform: translateY(-8px);
+    }
+
+    &::after {
+      transform: translateY(8px);
+    }
+  }
+
+  &.open &__body {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+    &::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: -100%;
+  left: 0;
+  background-color: var(--white-color);
+  border-color: var(--primary-color);
+  transition: left 0.3s;
+
+  @include mq(m) {
+    position: static;
+    background: transparent;
+  }
+
+  // nav.show
+  &.show {
+    top: 80px;
+  }
+}
+
+.menu {
+  @include mq(m) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__image {
+    width: 12%;
+  }
+
+  // menu__item
+  &__item {
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: var(--bold-font);
+    border-bottom: solid 1px var(--tertiary-color);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--primary-color);
+      color: var(--white-color);
+      @include mq(m) {
+        background: transparent;
+      }
+    }
+
+    @include mq(m) {
+      border-bottom: none;
+    }
+  }
+
+  // menu__link
+  &__link {
+    display: block;
+    color: var(--primary-color);
+    font-size: 1.3em;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+
+    @include mq(m) {
+      font-size: 1em;
+      &:hover {
+        border-bottom: solid 1px var(--tertiary-color);
+        color: var(--primary-color);
+      }
+    }
+
+    // menu__link--active
+    &--active {
+      font-family: var(--primary-font-bold);
+    }
+  }
+
+  // menu__buttom
+  &__buttom {
+    text-decoration: none;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    border-radius: 2em;
+  }
+}
