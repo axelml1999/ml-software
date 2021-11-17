@@ -1,0 +1,165 @@
+@import "../../../scss/main.scss";
+
+.portafolio {
+  background: rgba(73, 137, 203, 0.9);
+  position: relative;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    color: var(--white-color);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 25px;
+  }
+
+  &__input {
+    padding-left: 1em;
+    margin-top: 1em;
+    height: 3em;
+    width: 60%;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    outline: none;
+    color: var(--text-color-white);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  ::placeholder {
+    color: var(--white-color);
+  }
+
+  &__button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+  }
+
+  &__form {
+    @include mq(xl) {
+      padding-right: 10em;
+      padding-left: 10em;
+    }
+  }
+
+  &__label {
+    display: block;
+    color: var(--white-color);
+    font-size: 20px;
+    @include mq(m) {
+      padding-right: 0.5em;
+    }
+  }
+
+  #portafolioName {
+    color: var(--secondary-color);
+  }
+  #portafolioEmail {
+    color: var(--secondary-color);
+  }
+  #portafolioPhone {
+    color: var(--secondary-color);
+  }
+  #portafolioService {
+    color: var(--secondary-color);
+  }
+
+  &__formulario {
+    @include mq(m) {
+      .contact__item:nth-last-child(3) {
+        .contact__label {
+          margin-left: 1.3em;
+        }
+      }
+
+      .contact__item:nth-last-child(2) {
+        .contact__label {
+          margin-left: 1.5em;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding-bottom: 2em;
+    @include mq(m) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+    }
+  }
+
+  &__file {
+    margin-top: 1em;
+    @include mq(m) {
+      margin-right: 6em;
+    }
+
+    @include mq(l) {
+      margin-right: 17em;
+    }
+
+    @include mq(xl) {
+      margin-right: 25em;
+    }
+  }
+
+  ::-webkit-file-upload-button {
+    padding: 7.5px;
+    font-weight: 500;
+    font-size: 15px;
+    border: 2px transparent var(--white-color);
+    border-radius: 2em;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+
+    @include mq(m) {
+      cursor: pointer;
+      padding: 7.5px;
+      padding-left: 35px;
+      padding-right: 35px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
+
+.portafolio-table {
+  &__container {
+    margin: 1.3em;
+    @include mq(m) {
+      margin: 5em;
+    }
+  }
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid var(--primary-color);
+    font-size: 15px;
+
+    @include mq(m) {
+      font-size: 25px;
+    }
+  }
+
+  &__image {
+    @include mq(m) {
+      width: 20%;
+    }
+  }
+}

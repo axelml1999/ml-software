@@ -35,19 +35,20 @@
             ],
             "styles": [
               "src/app/scss/main.scss",
-              "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
-              "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/hover.css/css/hover.css",
               "./node_modules/aos/dist/aos.css",
-              "./node_modules/@glidejs/glide/src/assets/sass/glide.core.scss",
-              "./node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss",
-              "./node_modules/swiper/swiper.scss"
+              "./node_modules/swiper/swiper.scss",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/aos/dist/aos.js",
-              "./node_modules/swiper/swiper-bundle.js"
+              "./node_modules/swiper/swiper-bundle.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"
             ]
           },
           "configurations": {
@@ -114,18 +115,14 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/app/scss/main.scss",
-              "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
-              "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
               "./node_modules/hover.css/css/hover.css",
               "./node_modules/aos/dist/aos.css",
-              "./node_modules/@glidejs/glide/src/assets/sass/glide.core.scss",
-              "./node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss",
               "./node_modules/swiper/swiper.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/aos/dist/aos.js",
               "./node_modules/swiper/swiper-bundle.js"
             ]

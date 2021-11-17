@@ -1,1 +1,71 @@
-<p>portafolio-admin works!</p>
+<app-navbar-admin></app-navbar-admin>
+<section class="portafolio">
+    <div class="portafolio__container">
+        <h1 class="portafolio__title">Ingresar nuevo proyecto</h1>
+        <div class="portafolio__form" data-aos="zoom-in">
+            <form class="portafolio__formulario" id="portafolioForm">
+                <div class="portafolio__item">
+                    <label class="portafolio__label">Imagen: </label>
+                    <input class="portafolio__file" type="file" id="portafolioEmail" name="portafolioEmail" required>
+                </div>
+                <div class="portafolio__item">
+                    <label class="portafolio__label">Titulo: </label>
+                    <input class="portafolio__input" type="text" id="portafolioEmail" name="portafolioEmail" required>
+                </div>
+                <div class="portafolio__item">
+                    <label class="portafolio__label">Desc: </label>
+                    <input class="portafolio__input" type="text" id="portafolioPhone" name="portafolioPhone" required>
+                </div>
+                <div class="portafolio__item">
+                    <label class="portafolio__label">URL: </label>
+                    <input class="portafolio__input" type="text" id="portafolioPhone" name="portafolioPhone" required>
+                </div>
+            </form>
+            <button class="portafolio__button hvr-grow-shadow" type="submit">Enviar</button>
+        </div>
+    </div>
+</section>
+<section class="portafolio-table">
+    <div class="portafolio-table__container">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> Id </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="image">
+                <th mat-header-cell *matHeaderCellDef> Image </th>
+                <td mat-cell *matCellDef="let element"><img class="portafolio-table__image" src={{element.image}}
+                        alt="Image"></td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="title">
+                <th mat-header-cell *matHeaderCellDef> Title </th>
+                <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+                <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="url">
+                <th mat-header-cell *matHeaderCellDef> URL </th>
+                <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</section>
+<app-footer></app-footer>

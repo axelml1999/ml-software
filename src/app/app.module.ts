@@ -18,6 +18,11 @@ import { NavbarAdminComponent } from './admin/layout/navbar-admin/navbar-admin.c
 import { SidebarAdminComponent } from './admin/layout/sidebar-admin/sidebar-admin.component';
 import { PortafolioAdminComponent } from './admin/pages/portafolio-admin/portafolio-admin.component';
 import { ClientesAdminComponent } from './admin/pages/clientes-admin/clientes-admin.component';
+import { DataTablesModule } from 'angular-datatables';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -26,7 +31,12 @@ import { ClientesAdminComponent } from './admin/pages/clientes-admin/clientes-ad
     AppRoutingModule,
     OwlModule,
     NgxGlideModule,
-    SwiperModule
+    SwiperModule,
+    DataTablesModule,
+    NoopAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule
   ],
   declarations: [
     NavbarComponent,

@@ -1,0 +1,59 @@
+@import "../../../scss/main.scss";
+.clientes {
+  &__title {
+    text-align: center;
+    margin-top: 1.5em;
+    color: var(--primary-color);
+    font-size: 25px;
+  }
+
+  &__table {
+    margin: 1.3em;
+    @include mq(m) {
+      margin: 5em;
+    }
+  }
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid var(--primary-color);
+    font-size: 15px;
+
+    @include mq(m) {
+      font-size: 25px;
+    }
+  }
+
+  &__image {
+    @include mq(m) {
+      width: 20%;
+    }
+  }
+}
+
+.portafolio-table {
+  &__container {
+    margin: 2em;
+    @include mq(m) {
+      margin: 5em;
+    }
+  }
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid var(--primary-color);
+    font-size: 10px;
+
+    @include mq(m) {
+      font-size: 20px;
+    }
+  }
+}
